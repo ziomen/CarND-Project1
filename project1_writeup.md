@@ -15,10 +15,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[https://github.com/ziomen/CarND-Project1/blob/master/output%20images/MAUsolidWhiteRight_refined.jpg?raw=true]: ./output images/MAUsolidWhiteRight.jpg "Mau first example"
+[]: ./output images/MAUsolidWhiteRight.jpg "Mau first example"
 
 ---
-
 ### Reflection
 
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
