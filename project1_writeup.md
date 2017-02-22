@@ -6,8 +6,6 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-![reference final result] (/output images/MAUsolidWhiteRight.jpg)
-
 ---
 ### Reflection
 
@@ -17,11 +15,11 @@ The goals / steps of this project are the following:
 
 First, I converted the images to grayscale, to have a better contrast from the background.
 
-Second, I passed a Gaussian smoothing with a kernel of 5.
+Second, I passed a Gaussian smoothing.
 
 Third I applied a Canny edge detection function to all the image.
 
-Forth I applied a trapezoidal mask to identify the left and right edges of the lanes.
+Forth I applied a trapezoidal mask to isolate the region of interest including only the left and right edges of the lanes.
 
 Fifth I applied the Hough transform to detect the segments of the lanes.
 
@@ -38,12 +36,15 @@ At this point in order to draw a single line on the left and right lanes, I modi
 
 * Extrapolated the lane marking for the right and left lanes using the polynomial fit of the first order using np.poli1D
 
+Below an example of the refined annotated original image.
+
+![reference final result] (/output images/MAUsolidWhiteRight.jpg)
 
 ###2. Identify potential shortcomings with your current pipeline
 
-I used positive and negative slopes to separate the right and left lines works well on the test images where the lanes are pretty well separated and in the center of the image. In case of curves or in case of single lane or corssign lanes etc. this would not be applicable.
+I used positive and negative slopes to separate the right and left lines. It works well on the test images where the lanes are pretty well separated and in the center of the image. In case of curves or in case of single lane or crossing lanes etc. this would not be applicable.
 
-I also applied the line fucntion to the point img.shape to determine the coordinates at the bottom to make sure that the whole lane was always annotated. 
+I also applied the line fucntion to the point img.shape[] to determine the coordinates at the bottom of the image to make sure that the whole lane was always annotated. 
 
 ###3. Suggest possible improvements to your pipeline
 
