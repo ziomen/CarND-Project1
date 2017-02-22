@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./output images/MAUsolidWhiteRight.jpg "Mau first example"
+[https://github.com/ziomen/CarND-Project1/blob/master/output%20images/MAUsolidWhiteRight_refined.jpg?raw=true]: ./output images/MAUsolidWhiteRight.jpg "Mau first example"
 
 ---
 
