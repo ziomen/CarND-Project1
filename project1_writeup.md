@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
-[//]: # (Image References)
+![reference final result]: (#./output images/MAUsolidWhiteRight.jpg)
 
 []: ./output images/MAUsolidWhiteRight.jpg "Mau first example"
 
